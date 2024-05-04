@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Models Are</h1>
+    <a href="/admit/new">New Record</a>
+
+    <% for(let jin of jingle){ %>
+        <li><%= jin.name  %> <a href="/admit/<%= jin._id %>"> Check it!</a></li>
+        <% } %>
+
+    <% if(sex !== 'All'){ %>
+        <a href="/admit">All Genders</a>
+        <% } %>
+</body>
+</html>

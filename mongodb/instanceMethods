@@ -1,0 +1,62 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/Friends')
+.then(() => {
+    console.log('Hey Bhushan Connection Successfull');
+}
+)
+.catch((err) =>{
+    console.log('Try Again Bhushan \n Something gonna be wrong')
+
+}
+)
+
+const crushS = new mongoose.Schema(
+    {
+        name : String,
+        standard : {
+            type:String,
+            required: true
+        },
+        colour :{
+            type:String,
+            enum:['W','P','B'],
+            required:true,
+            min:[1,'Nijam Cheppu Boss']
+        }
+
+    }
+)
+crushS.methods.chColor = async function(col) {
+    this.colour = col;
+}
+const Crush = mongoose.model('Crush',crushS);
+
+// Crush.insertMany(
+//     [
+//         {name:'Vasudha',standard:'8th class',colour:'W'},
+//         {name:'Bala',standard:'InterMediate',colour:'W'},
+//         {name:'Uma',standard:'BZC',colour:'W'},
+//         {name:'Jahnavi',standard:'BZC',colour:'P'},
+//         {name:'Sirisha',standard:'BCOM',colour:'B'},
+//         {name:'Prasanna',standard:'BZC',colour:'W'},
+//         {name:'Lavanya',standard:'MCA',colour:'W'}
+//     ]
+// );
+
+// const kasulu = new Crush({name:'Sri Lekha',standard:"BCA",colour:"P"});
+// kasulu.save();
+
+// const mrg = async (col)=>{
+//     console.log(kasulu);
+//     await kasulu.chColor(col);
+//     console.log(kasulu);
+// }
+// mrg('W');
+const coo = async (name,col)=>{
+    const person =  await Crush.find({name:name});
+    console.log(person);
+    await person.chColor(col);
+    console.log(person)
+}
+
+coo('Sirisha','P');

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of <%= iid.name  %></title>
+</head>
+<body>
+<h1>Here the info about  <%= iid.name %></h1>
+<ul>
+    <li>Name : <%= iid.name %></li>
+    <li>Age :<%= iid.age %> </li>
+    <li>Gender :<a href="/admit?sex=<%= iid.sex %>"><%= iid.sex %></a></li>
+</ul>
+<a href="/admit">Back to Lists</a>
+<a href="/admit/new">New Record</a>
+<a href="/admit/<%=iid._id%>/update">Bang The Data</a><br>
+<form action="/admit/<%=iid._id%>?_method=DELETE" method="post">
+    <button>Delete</button>
+</form>
+
+
+</body>
+</html>

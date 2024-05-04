@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= n  %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/Js/jquery.min.js"></script>
+    <script src="/Js/bootstrap.min.js"></script>
+    
+
+</head>
+<style>
+    #body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+    ul{
+        font-size: 1.5em;   
+    }
+    #key{
+        color: rgb(214, 0, 0);
+    }
+    #value{
+        color: rgb(29, 14, 1);
+    }
+</style>
+<body>
+  
+    <%- include('navbar')%>
+    <div id="body">
+    <h1> <marquee behavior="" direction="">You Are Searching For <span id="name"><%= n  %></span></marquee></h1>
+    <button onclick="rand()">CBG</button>
+    <div>
+        
+        <h2 id="name">Name : <%= name %></h2>
+        <h2>Team : <%= team %></h2>
+        <h2>Role : <%= role %></h2>
+
+        <img src="<%= image %>" alt="">  
+    </div>
+    <ul>
+        <table>
+        <% for(let d in details) { %>
+             <tr><td id="key"><li><%= d.toUpperCase() %></td><td id="value"> : <%= details[d] %></td></tr></li>
+            <% } %>
+        </table>
+    </ul>
+    <script> function rand(){
+        r = Math.floor(Math.random()*255);
+        g = Math.floor(Math.random()*255);
+        b = Math.floor(Math.random()*255);
+        //return `rgb(${r , g, b })`;
+       let name =  document.getElementById('#name');
+       document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+       document.name.style.color = `rgb(${g},${r},${b})`;
+
+    } 
+    </script>
+</div>
+
+</body>
+</html>

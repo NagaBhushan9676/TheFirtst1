@@ -1,0 +1,11 @@
+<% layout('home') %>
+    <h1><%= campgrounds.name%> </h1>
+    <h2><%= campgrounds.location %></h2>
+    <img src="<%= campgrounds.image %>" alt="">
+    <h3>INR <%= campgrounds.price %></h3>
+    <p><%= campgrounds.description %></p>
+    <form action="/campgrounds/<%=campgrounds.id %>?_method=DELETE" method="post">
+        <Button>Delete It!</Button>
+    </form>
+    <p><a href="/campgrounds/<%=campgrounds._id %>/edit">Edit</a></p>
+    <a href="/campgrounds">All CampGrounds</a>

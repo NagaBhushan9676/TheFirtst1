@@ -1,0 +1,47 @@
+{
+    
+     "Kohli": {
+        "name": "Virat Kohli",
+        "team": "India",
+        "role": "Batsman",
+        "image": "https://th.bing.com/th/id/R.a4546adb33aa1f86338a691d7bf48470?rik=au0PNIhERYJJIw&riu=http%3a%2f%2fdc-cdn.s3-ap-southeast-1.amazonaws.com%2fdc-Cover-etln4rheja6ieoq4nlffm8dnj4-20160425004620.Medi.jpeg&ehk=ULAcRCYsdiga1NDO0d2cjT3SHc9ZMnuwnDxOs3Umi8w%3d&risl=&pid=ImgRaw&r=0",
+        "details": {
+          "age": 33,
+          "country": "India",
+          "batting_style": "Right-handed",
+          "captain": true,
+          "t20_specialist": true,
+          "wicketkeeper": false
+        }
+      },
+    "Abd" :{
+        "name": "AB de Villiers",
+        "team": "South Africa",
+        "role": "Batsman",
+        "image": "https://images.indiafantasy.com/wp-content/uploads/20220723213428/1491299110_FgOq3D_abde-villiers.jpg",
+        "details": {
+          "age": 38,
+          "country": "South Africa",
+          "batting_style": "Right-handed",
+          "wicketkeeper": true,
+          "t20_specialist": true,
+          "captain": true
+        }
+      },
+     "Gayle": {
+        "name": "Chris Gayle",
+        "team": "West Indies",
+        "role": "Batsman",
+        "image": "https://th.bing.com/th/id/R.cdea6af2ffc5fe411f319f5ae93323d6?rik=GTKMD46DdPCJsw&riu=http%3a%2f%2fim.rediff.com%2fcricket%2f2015%2fmay%2f06gayle1.jpg&ehk=AqMoruCwVQ%2bpHUoNfpg%2bRGhiPZQtEqq%2f1O34%2bN7dVQ8%3d&risl=&pid=ImgRaw&r=0",
+        "details": {
+          "age": 43,
+          "country": "West Indies",
+          "batting_style": "Left-handed",
+          "t20_specialist": true,
+          "wicketkeeper": false,
+          "captain": false
+        }
+      }
+    
+  }
+  

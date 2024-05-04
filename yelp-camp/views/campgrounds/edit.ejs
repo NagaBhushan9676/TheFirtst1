@@ -1,0 +1,14 @@
+<% layout('home') %>
+    <h1>Edit Now</h1>
+    <form action="/campgrounds/<%=campgrounds._id%>?_method=put" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter City Name" value="<%= campgrounds.name %>">
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Enter Location" value="<%= campgrounds.location %>">
+        </div>
+        <button>Yay! Edit</button>
+    </form>
+    <a href="/campgrounds/<%=campgrounds._id%>">Back To Location</a>

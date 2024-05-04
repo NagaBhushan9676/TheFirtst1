@@ -1,0 +1,95 @@
+File Selection Button Test Cases:
+
+Test Case ID: TC_FILE_001
+Test Case Description: Verify functionality of file selection button
+Test Data: Click on the file selection
+Expected Outcome: File dialog box opens
+Actual Outcome: File dialog box opens
+Pass/Fail: Pass
+
+Test Case ID: TC_FILE_002
+Test Case Description: Verify selection of a valid text file
+Test Data: Select a valid text file
+Expected Outcome: Selected file is displayed
+Actual Outcome: Selected file is displayed
+Pass/Fail: Pass
+
+Test Case ID: TC_FILE_003
+Test Case Description: Verify selection of an invalid file format
+Test Data: Select a file with invalid format
+Expected Outcome: Error message displayed
+Actual Outcome: Error message displayed
+Pass/Fail: Pass
+
+Generate Button Test Cases:
+
+Test Case ID: TC_GEN_001
+Test Case Description: Verify functionality of generate button
+Test Data: Click on the generate button
+Expected Outcome: Report is generated successfully
+Actual Outcome: Report is generated successfully
+Pass/Fail: Pass
+
+Test Case ID: TC_GEN_002
+Test Case Description: Verify generation of report with valid input data
+Test Data: Provide valid input data
+Expected Outcome: Report is generated with data
+Actual Outcome: Report is generated with data
+Pass/Fail: Pass
+
+Test Case ID: TC_GEN_003
+Test Case Description: Verify error handling for invalid input data
+Test Data: Provide invalid input data
+Expected Outcome: Error message displayed
+Actual Outcome: Error message displayed
+Pass/Fail: Pass
+
+Read Text from File Button Test Cases:
+
+Test Case ID: TC_READ_001
+Test Case Description: Verify functionality of read text from file button
+Test Data: Click on the read button
+Expected Outcome: Text from selected file is displayed
+Actual Outcome: Text from selected file is displayed
+Pass/Fail: Pass
+
+Test Case ID: TC_READ_002
+Test Case Description: Verify display of text for valid file format
+Test Data: Select a valid text file
+Expected Outcome: Text from file is displayed
+Actual Outcome: Text from file is displayed
+Pass/Fail: Pass
+
+Test Case ID: TC_READ_003
+Test Case Description: Verify error handling for invalid file format
+Test Data: Select a file with invalid format
+Expected Outcome: Error message displayed
+Actual Outcome: Error message displayed
+Pass/Fail: Pass
+
+
+
+--------------------------------------
+InquireHub
+Question Answering System
+BERT (Bidirectional Encoder Representations from Transformers)
+Natural Language Processing (NLP)
+Responsive Interface
+Advanced NLP pre-trained models
+Intelligent Platform
+Cutting-edge Technologies
+Intelligent Response Refinement
+
+
+-------------------
+Potential future enhancements for InquireHub, an advanced Question Answering System. These enhancements include exploring enhanced NLP models, improving user interaction learning, integrating multimodal capabilities, expanding language support, implementing real-time updates, introducing collaborative filtering, and enhancing security and privacy measures. These improvements aim to advance the system's natural language understanding, adaptability, global usability, recommendation capabilities, and data security compliance.
+--------------------------------------
+Future Scope
+Enhanced NLP Models: InquireHub can further explore and integrate emerging NLP models to continually advance its natural language understanding capabilities. Staying at the forefront of model development ensures sustained relevance and improved performance.
+User Interaction Learning: Future iterations could focus on refining the system's adaptive learning by incorporating advanced techniques to understand and respond to user preferences more effectively. This would contribute to a more personalized and intuitive user experience.
+Multimodal Integration: Integrating additional modalities, such as image and video processing, can broaden InquireHub's scope, enabling it to handle a diverse range of user queries that involve different types of content.
+Cross-Lingual Capabilities: Expanding language support and incorporating cross-lingual capabilities would enhance InquireHub's usability on a global scale, catering to users with diverse linguistic preferences.
+Real-Time Updates: Implementing mechanisms for real-time updates and continuous learning from evolving language patterns ensures that InquireHub remains adaptive to changing user behaviors and linguistic trends.
+Collaborative Filtering: Introducing collaborative filtering techniques could enhance the system's ability to recommend relevant content based on user interactions, fostering a more engaging and interactive experience.
+Security and Privacy: Strengthening security measures and incorporating robust privacy features will be crucial to address concerns related to user data and ensure the system's compliance with evolving data protection regulations.
+

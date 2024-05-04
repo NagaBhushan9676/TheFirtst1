@@ -1,0 +1,7 @@
+<% layout('home') %>
+    <div><h2>All CampGrounds</h2></div>
+    <ul>
+    <% for(let cpg of campgrounds ) {%>
+       <li><a href="./campgrounds/<%= cpg._id %>"><%= cpg.name %></a></li>
+    <% } %> 
+    </ul>   

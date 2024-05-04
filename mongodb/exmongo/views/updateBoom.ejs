@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3> Here We Go </h3>
+    <form action="/admit/<%=findAdmit._id%>?_method=PUT " method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter name" value="<%=findAdmit.name%>">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" max="25" min="20" value="<%=findAdmit.age%>">
+        <label for="gen">Gender</label>
+        <select name="sex" id="gen">
+            <% for(let gen of genders) { %>
+             <option value="<%=gen%>" <%=findAdmit.gen === gen?'selected':''%>><%=gen %></option>
+            <% }%>
+        </select> 
+        <button>Submit</button>
+    </form>
+    <a href="/admit">Check The data</a>
+</body>
+</html>
